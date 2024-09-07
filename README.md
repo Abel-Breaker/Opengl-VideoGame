@@ -1,7 +1,7 @@
 # OpenGL Game Proyect
 
 Hi! This is my first big proyect and repository on GitHub.  
-I am learning the basics of C++ and graphic computing, so I decided to make this proyect.  
+I am learning the basics of C++ and graphic computing, so I decided to make this OpenGL 4.0 proyect.  
 I would really appreciate any opinions or advice as I am new to this.
 
 ![](https://github.com/Abel-Breaker/Opengl-VideoGame/blob/master/GamePhoto.png)  
