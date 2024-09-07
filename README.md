@@ -4,11 +4,8 @@ Hi! This is my first big proyect and repository on GitHub.
 I am learning the basics of C++ and graphic computing, so I decided to make this proyect.  
 I would really appreciate any opinions or advice as I am new to this.
 
-<<<<<<<<< Temporary merge branch 1
-!(https://postimg.cc/K1nvYC3Z)  
-=========
-![](https://postimg.cc/K1nvYC3Z)  
->>>>>>>>> Temporary merge branch 2
+!([](https://github.com/Abel-Breaker/Opengl-VideoGame/blob/master/GamePhoto.png))  
+
 
 The proyect doesn´t follow any specific objective, I am only implementing things that occur to me and I'm learning. The idea is to end up with a project that is easily convertible to a graphics engine (adding a UHD) or to a small video game.
 
