@@ -12,7 +12,7 @@ unsigned int SCR_HEIGHT;
 /* ########### VARIABLES ########### */
 
 //Actualización
-double lastTime = glfwGetTime();
+double lastTime = glfwGetTime(); 
 double currentTime;
 double lapsoTime = 0;
 int nbFrames = 0;

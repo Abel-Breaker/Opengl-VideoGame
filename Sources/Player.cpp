@@ -4,6 +4,7 @@
 #include <limits>
 #include "../Headers/Frame.h"
 #define HEIGHTJUMP 7
+#define SPEEDJUMP 20
 #define DEFAULTGRAVITY 40 //NO MUY ALTA
 #define DEFAULTSPEED 10
 #define SPRINTINGTSPEED 2*DEFAULTSPEED
@@ -37,16 +38,16 @@ void Player::applyGravity() { //TODO: ajustar el salto manualmente en vez de red
 			oldHeight = this->position_Y; // Captura la posición la primera vez que jumping es 1
 			firstTime = false;
 		}
-		updateHeight(oldHeight + HEIGHTJUMP);
+
+		this->position_Y += SPEEDJUMP * Frame::getLapsoTime();
 
 		if ((this->position_Y - oldHeight > HEIGHTJUMP)) {
 			this->jumping = 2;
-			//this->forceGravity -= 0.004; //Ralentizamos la caída
 		}
 	}
 	else if (this->jumping == 2) {
-		if ((abs(this->position_Y - 3.0 - this->terrain->getYLocation(this->position_X, this->position_Z)) > 0.2)) {
-			updateHeight(this->terrain->getYLocation(this->position_X, this->position_Z));
+		if ((abs(this->position_Y - 3.0 - this->terrain->getYLocation(this->position_X, this->position_Z)) > 0.4)) {
+			this->position_Y -= SPEEDJUMP * Frame::getLapsoTime();
 		}
 		else {
 			this->forceGravity = DEFAULTGRAVITY;
