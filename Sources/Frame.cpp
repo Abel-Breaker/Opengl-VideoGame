@@ -20,7 +20,7 @@ void Frame::tiempo(GLFWwindow* window) {
 		nbFrames = 0;
 		unSegundo = 0;
 	}
-	lastTime = currentTime;
+	lastTime = currentTime; 
 }
 
 double Frame::getLapsoTime() {
