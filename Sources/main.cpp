@@ -44,7 +44,8 @@ void openGlInit() {
 	//glDisable(GL_BLEND);
 	//glBlendFunc(GL_SRC_ALPHA, GL_ONE_MINUS_SRC_ALPHA);
 	glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_S, GL_REPEAT);	// set texture wrapping to GL_REPEAT (default wrapping method)
-
+	//glfwWindowHint(GLFW_SAMPLES, 4); // 4x MSAA
+	//glEnable(GL_MULTISAMPLE); //Hacer disable que se quedó guardado
 }
 
 int main()

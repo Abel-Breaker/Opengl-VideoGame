@@ -32,6 +32,7 @@ Player::Player() {
 void Player::applyGravity() { //TODO: ajustar el salto manualmente en vez de reducir la gravedad( this->position_Y +=1;); o hacer que a mas cerca del suelo mas gravedad
 	static double oldHeight = 0.0; // Almacena la posición solo la primera vez que jumping es 1
 	static bool firstTime = true;  // Variable que controla si ya se capturó oldHeight
+	double lastLapsoTime = 0;
 
 	if (this->jumping == 1) {
 		if (firstTime) {
@@ -39,7 +40,8 @@ void Player::applyGravity() { //TODO: ajustar el salto manualmente en vez de red
 			firstTime = false;
 		}
 
-		this->position_Y += SPEEDJUMP * Frame::getLapsoTime();
+		lastLapsoTime = Frame::getLapsoTime();
+		this->position_Y += SPEEDJUMP * lastLapsoTime;
 
 		if ((this->position_Y - oldHeight > HEIGHTJUMP)) {
 			this->jumping = 2;
@@ -47,7 +49,8 @@ void Player::applyGravity() { //TODO: ajustar el salto manualmente en vez de red
 	}
 	else if (this->jumping == 2) {
 		if ((abs(this->position_Y - 3.0 - this->terrain->getYLocation(this->position_X, this->position_Z)) > 0.4)) {
-			this->position_Y -= SPEEDJUMP * Frame::getLapsoTime();
+			lastLapsoTime = Frame::getLapsoTime();
+			this->position_Y -= SPEEDJUMP * lastLapsoTime;
 		}
 		else {
 			this->forceGravity = DEFAULTGRAVITY;

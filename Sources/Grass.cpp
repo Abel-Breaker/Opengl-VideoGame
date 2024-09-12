@@ -16,7 +16,6 @@ void Grass::prepareGrass(int numberOfInstances, Terrain *terrain) {
 	this->terrain = terrain;
 	generateMeshPoints();
 	generateRandomLocations();
-	//getYLocation(1, 0);///
 	createVao();
 	bindBufferGrassLocation();
 	loadTexture();
@@ -81,7 +80,7 @@ void Grass::createVao() {
 
 
 	glBindBuffer(GL_ARRAY_BUFFER, VBO);
-	glBufferData(GL_ARRAY_BUFFER, sizeof(this->meshPoints), this->meshPoints, GL_STATIC_DRAW);/////////////////
+	glBufferData(GL_ARRAY_BUFFER, sizeof(this->meshPoints), this->meshPoints, GL_STATIC_DRAW);
 
 	//Normales
 	//glVertexAttribPointer(1, 3, GL_FLOAT, GL_FALSE, 8 * sizeof(float), (void*)0);
@@ -156,7 +155,7 @@ void Grass::draw() {
 
 	/* DIBUJAMOS */
 	glBindVertexArray(this->VAO);
-	glDrawArraysInstanced(GL_TRIANGLES, 0, 30, this->numberOfIndices * 3);// *3); //mismo sitio para mas volumen
+	glDrawArraysInstanced(GL_TRIANGLES, 0, 30, this->numberOfIndices); //Aprovechamos el *3 de los ejes para que en cada hierba dibuje 3
 	glBindVertexArray(0);
 
 }
