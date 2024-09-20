@@ -1,0 +1,631 @@
+
+---
+events:
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-3.30/Modules/CMakeDetermineSystem.cmake:205 (message)"
+      - "CMakeLists.txt:74 (PROJECT)"
+    message: |
+      The system is: Windows - 10.0.19045 - AMD64
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-3.30/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "C:/Program Files/CMake/share/cmake-3.30/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "C:/Program Files/CMake/share/cmake-3.30/Modules/CMakeDetermineCCompiler.cmake:123 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:74 (PROJECT)"
+    message: |
+      Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
+      Compiler:  
+      Build flags: 
+      Id flags:  
+      
+      The output was:
+      0
+      Versión de MSBuild 17.8.5+b5265ef37 para .NET Framework
+      Compilación iniciada a las 14/09/2024 21:19:27.
+      
+      Proyecto "C:\\Users\\miste\\AAAJuego\\Opengl-VideoGame\\GameCore\\Libraries\\build\\CMakeFiles\\3.30.3\\CompilerIdC\\CompilerIdC.vcxproj" en nodo 1 (destinos predeterminados).
+      PrepareForBuild:
+        Creando directorio "Debug\\".
+        La salida estructurada está habilitada. El formato del diagnóstico del compilador reflejará la jerarquía de errores. Consulte https://aka.ms/cpp/structured-output para obtener más detalles.
+        Creando directorio "Debug\\CompilerIdC.tlog\\".
+      InitializeBuildStatus:
+        Se creará "Debug\\CompilerIdC.tlog\\unsuccessfulbuild" porque se especificó "AlwaysCreate".
+        Aplicando tarea Touch a "Debug\\CompilerIdC.tlog\\unsuccessfulbuild".
+      ClCompile:
+        C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\bin\\HostX64\\x86\\CL.exe /c /nologo /W0 /WX- /diagnostics:column /Od /Oy- /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"Debug\\\\" /Fd"Debug\\vc143.pdb" /external:W0 /Gd /TC /analyze- /FC /errorReport:queue CMakeCCompilerId.c
+        CMakeCCompilerId.c
+      Link:
+        C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\bin\\HostX64\\x86\\link.exe /ERRORREPORT:QUEUE /OUT:".\\CompilerIdC.exe" /INCREMENTAL:NO /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /PDB:".\\CompilerIdC.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:".\\CompilerIdC.lib" /MACHINE:X86 /SAFESEH Debug\\CMakeCCompilerId.obj
+        CompilerIdC.vcxproj -> C:\\Users\\miste\\AAAJuego\\Opengl-VideoGame\\GameCore\\Libraries\\build\\CMakeFiles\\3.30.3\\CompilerIdC\\CompilerIdC.exe
+      PostBuildEvent:
+        for %%i in (cl.exe) do @echo CMAKE_C_COMPILER=%%~$PATH:i
+        :VCEnd
+        CMAKE_C_COMPILER=C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x86\\cl.exe
+      FinalizeBuildStatus:
+        Se eliminará el archivo "Debug\\CompilerIdC.tlog\\unsuccessfulbuild".
+        Aplicando tarea Touch a "Debug\\CompilerIdC.tlog\\CompilerIdC.lastbuildstate".
+      Compilación del proyecto terminada "C:\\Users\\miste\\AAAJuego\\Opengl-VideoGame\\GameCore\\Libraries\\build\\CMakeFiles\\3.30.3\\CompilerIdC\\CompilerIdC.vcxproj" (destinos predeterminados).
+      
+      Compilación correcta.
+          0 Advertencia(s)
+          0 Errores
+      
+      Tiempo transcurrido 00:00:01.01
+      
+      
+      Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "CompilerIdC.exe"
+      
+      Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "CompilerIdC.vcxproj"
+      
+      The C compiler identification is MSVC, found in:
+        C:/Users/miste/AAAJuego/Opengl-VideoGame/GameCore/Libraries/build/CMakeFiles/3.30.3/CompilerIdC/CompilerIdC.exe
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-3.30/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "C:/Program Files/CMake/share/cmake-3.30/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "C:/Program Files/CMake/share/cmake-3.30/Modules/CMakeDetermineCXXCompiler.cmake:126 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:74 (PROJECT)"
+    message: |
+      Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
+      Compiler:  
+      Build flags: 
+      Id flags:  
+      
+      The output was:
+      0
+      Versión de MSBuild 17.8.5+b5265ef37 para .NET Framework
+      Compilación iniciada a las 14/09/2024 21:19:28.
+      
+      Proyecto "C:\\Users\\miste\\AAAJuego\\Opengl-VideoGame\\GameCore\\Libraries\\build\\CMakeFiles\\3.30.3\\CompilerIdCXX\\CompilerIdCXX.vcxproj" en nodo 1 (destinos predeterminados).
+      PrepareForBuild:
+        Creando directorio "Debug\\".
+        La salida estructurada está habilitada. El formato del diagnóstico del compilador reflejará la jerarquía de errores. Consulte https://aka.ms/cpp/structured-output para obtener más detalles.
+        Creando directorio "Debug\\CompilerIdCXX.tlog\\".
+      InitializeBuildStatus:
+        Se creará "Debug\\CompilerIdCXX.tlog\\unsuccessfulbuild" porque se especificó "AlwaysCreate".
+        Aplicando tarea Touch a "Debug\\CompilerIdCXX.tlog\\unsuccessfulbuild".
+      ClCompile:
+        C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\bin\\HostX64\\x86\\CL.exe /c /nologo /W0 /WX- /diagnostics:column /Od /Oy- /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"Debug\\\\" /Fd"Debug\\vc143.pdb" /external:W0 /Gd /TP /analyze- /FC /errorReport:queue CMakeCXXCompilerId.cpp
+        CMakeCXXCompilerId.cpp
+      Link:
+        C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\bin\\HostX64\\x86\\link.exe /ERRORREPORT:QUEUE /OUT:".\\CompilerIdCXX.exe" /INCREMENTAL:NO /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /PDB:".\\CompilerIdCXX.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:".\\CompilerIdCXX.lib" /MACHINE:X86 /SAFESEH Debug\\CMakeCXXCompilerId.obj
+        CompilerIdCXX.vcxproj -> C:\\Users\\miste\\AAAJuego\\Opengl-VideoGame\\GameCore\\Libraries\\build\\CMakeFiles\\3.30.3\\CompilerIdCXX\\CompilerIdCXX.exe
+      PostBuildEvent:
+        for %%i in (cl.exe) do @echo CMAKE_CXX_COMPILER=%%~$PATH:i
+        :VCEnd
+        CMAKE_CXX_COMPILER=C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x86\\cl.exe
+      FinalizeBuildStatus:
+        Se eliminará el archivo "Debug\\CompilerIdCXX.tlog\\unsuccessfulbuild".
+        Aplicando tarea Touch a "Debug\\CompilerIdCXX.tlog\\CompilerIdCXX.lastbuildstate".
+      Compilación del proyecto terminada "C:\\Users\\miste\\AAAJuego\\Opengl-VideoGame\\GameCore\\Libraries\\build\\CMakeFiles\\3.30.3\\CompilerIdCXX\\CompilerIdCXX.vcxproj" (destinos predeterminados).
+      
+      Compilación correcta.
+          0 Advertencia(s)
+          0 Errores
+      
+      Tiempo transcurrido 00:00:00.77
+      
+      
+      Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "CompilerIdCXX.exe"
+      
+      Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "CompilerIdCXX.vcxproj"
+      
+      The CXX compiler identification is MSVC, found in:
+        C:/Users/miste/AAAJuego/Opengl-VideoGame/GameCore/Libraries/build/CMakeFiles/3.30.3/CompilerIdCXX/CompilerIdCXX.exe
+      
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-3.30/Modules/CMakeDetermineCompilerABI.cmake:74 (try_compile)"
+      - "C:/Program Files/CMake/share/cmake-3.30/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:74 (PROJECT)"
+    checks:
+      - "Detecting C compiler ABI info"
+    directories:
+      source: "C:/Users/miste/AAAJuego/Opengl-VideoGame/GameCore/Libraries/build/CMakeFiles/CMakeScratch/TryCompile-ysc73u"
+      binary: "C:/Users/miste/AAAJuego/Opengl-VideoGame/GameCore/Libraries/build/CMakeFiles/CMakeScratch/TryCompile-ysc73u"
+    cmakeVariables:
+      CMAKE_C_FLAGS: "/DWIN32 /D_WINDOWS"
+      CMAKE_C_FLAGS_DEBUG: "/Zi /Ob0 /Od /RTC1"
+      CMAKE_EXE_LINKER_FLAGS: "/machine:X86"
+    buildResult:
+      variable: "CMAKE_C_ABI_COMPILED"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/miste/AAAJuego/Opengl-VideoGame/GameCore/Libraries/build/CMakeFiles/CMakeScratch/TryCompile-ysc73u'
+        
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_a9e18.vcxproj /p:Configuration=Debug /p:Platform=Win32 /p:VisualStudioVersion=17.0 /v:n
+        Versión de MSBuild 17.8.5+b5265ef37 para .NET Framework
+        Compilación iniciada a las 14/09/2024 21:19:29.
+        
+        Proyecto "C:\\Users\\miste\\AAAJuego\\Opengl-VideoGame\\GameCore\\Libraries\\build\\CMakeFiles\\CMakeScratch\\TryCompile-ysc73u\\cmTC_a9e18.vcxproj" en nodo 1 (destinos predeterminados).
+        PrepareForBuild:
+          Creando directorio "cmTC_a9e18.dir\\Debug\\".
+          La salida estructurada está habilitada. El formato del diagnóstico del compilador reflejará la jerarquía de errores. Consulte https://aka.ms/cpp/structured-output para obtener más detalles.
+          Creando directorio "C:\\Users\\miste\\AAAJuego\\Opengl-VideoGame\\GameCore\\Libraries\\build\\CMakeFiles\\CMakeScratch\\TryCompile-ysc73u\\Debug\\".
+          Creando directorio "cmTC_a9e18.dir\\Debug\\cmTC_a9e18.tlog\\".
+        InitializeBuildStatus:
+          Se creará "cmTC_a9e18.dir\\Debug\\cmTC_a9e18.tlog\\unsuccessfulbuild" porque se especificó "AlwaysCreate".
+          Aplicando tarea Touch a "cmTC_a9e18.dir\\Debug\\cmTC_a9e18.tlog\\unsuccessfulbuild".
+        ClCompile:
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\bin\\HostX64\\x86\\CL.exe /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /Oy- /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_a9e18.dir\\Debug\\\\" /Fd"cmTC_a9e18.dir\\Debug\\vc143.pdb" /external:W1 /Gd /TC /analyze- /errorReport:queue "C:\\Program Files\\CMake\\share\\cmake-3.30\\Modules\\CMakeCCompilerABI.c"
+          Compilador de optimización de C/C++ de Microsoft (R) versión 19.38.33135 para x86
+          (C) Microsoft Corporation. Todos los derechos reservados.
+          cl /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /Oy- /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_a9e18.dir\\Debug\\\\" /Fd"cmTC_a9e18.dir\\Debug\\vc143.pdb" /external:W1 /Gd /TC /analyze- /errorReport:queue "C:\\Program Files\\CMake\\share\\cmake-3.30\\Modules\\CMakeCCompilerABI.c"
+          CMakeCCompilerABI.c
+        Link:
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\bin\\HostX64\\x86\\link.exe /ERRORREPORT:QUEUE /OUT:"C:\\Users\\miste\\AAAJuego\\Opengl-VideoGame\\GameCore\\Libraries\\build\\CMakeFiles\\CMakeScratch\\TryCompile-ysc73u\\Debug\\cmTC_a9e18.exe" /INCREMENTAL /ILK:"cmTC_a9e18.dir\\Debug\\cmTC_a9e18.ilk" /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Users/miste/AAAJuego/Opengl-VideoGame/GameCore/Libraries/build/CMakeFiles/CMakeScratch/TryCompile-ysc73u/Debug/cmTC_a9e18.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/Users/miste/AAAJuego/Opengl-VideoGame/GameCore/Libraries/build/CMakeFiles/CMakeScratch/TryCompile-ysc73u/Debug/cmTC_a9e18.lib" /MACHINE:X86  /machine:X86 cmTC_a9e18.dir\\Debug\\CMakeCCompilerABI.obj
+          cmTC_a9e18.vcxproj -> C:\\Users\\miste\\AAAJuego\\Opengl-VideoGame\\GameCore\\Libraries\\build\\CMakeFiles\\CMakeScratch\\TryCompile-ysc73u\\Debug\\cmTC_a9e18.exe
+        FinalizeBuildStatus:
+          Se eliminará el archivo "cmTC_a9e18.dir\\Debug\\cmTC_a9e18.tlog\\unsuccessfulbuild".
+          Aplicando tarea Touch a "cmTC_a9e18.dir\\Debug\\cmTC_a9e18.tlog\\cmTC_a9e18.lastbuildstate".
+        Compilación del proyecto terminada "C:\\Users\\miste\\AAAJuego\\Opengl-VideoGame\\GameCore\\Libraries\\build\\CMakeFiles\\CMakeScratch\\TryCompile-ysc73u\\cmTC_a9e18.vcxproj" (destinos predeterminados).
+        
+        Compilación correcta.
+            0 Advertencia(s)
+            0 Errores
+        
+        Tiempo transcurrido 00:00:00.56
+        
+      exitCode: 0
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-3.30/Modules/CMakeDetermineCompilerABI.cmake:218 (message)"
+      - "C:/Program Files/CMake/share/cmake-3.30/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:74 (PROJECT)"
+    message: |
+      Parsed C implicit link information:
+        link line regex: [^( *|.*[/\\])(ld[0-9]*(\\.[a-z]+)?|link\\.exe|lld-link(\\.exe)?|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
+        linker tool regex: [^[ 	]*(->|")?[ 	]*(([^"]*[/\\])?(ld[0-9]*(\\.[a-z]+)?|link\\.exe|lld-link(\\.exe)?))("|,| |$)]
+        linker tool for 'C': C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.38.33130/bin/HostX64/x86/link.exe
+        implicit libs: []
+        implicit objs: []
+        implicit dirs: []
+        implicit fwks: []
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-3.30/Modules/Internal/CMakeDetermineLinkerId.cmake:40 (message)"
+      - "C:/Program Files/CMake/share/cmake-3.30/Modules/CMakeDetermineCompilerABI.cmake:255 (cmake_determine_linker_id)"
+      - "C:/Program Files/CMake/share/cmake-3.30/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:74 (PROJECT)"
+    message: |
+      Running the C compiler's linker: "C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.38.33130/bin/HostX64/x86/link.exe" "-v"
+      Microsoft (R) Incremental Linker Version 14.38.33135.0
+      Copyright (C) Microsoft Corporation.  All rights reserved.
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-3.30/Modules/CMakeDetermineCompilerABI.cmake:74 (try_compile)"
+      - "C:/Program Files/CMake/share/cmake-3.30/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:74 (PROJECT)"
+    checks:
+      - "Detecting CXX compiler ABI info"
+    directories:
+      source: "C:/Users/miste/AAAJuego/Opengl-VideoGame/GameCore/Libraries/build/CMakeFiles/CMakeScratch/TryCompile-6jk5ej"
+      binary: "C:/Users/miste/AAAJuego/Opengl-VideoGame/GameCore/Libraries/build/CMakeFiles/CMakeScratch/TryCompile-6jk5ej"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: "/DWIN32 /D_WINDOWS /EHsc"
+      CMAKE_CXX_FLAGS_DEBUG: "/Zi /Ob0 /Od /RTC1"
+      CMAKE_CXX_SCAN_FOR_MODULES: "OFF"
+      CMAKE_EXE_LINKER_FLAGS: "/machine:X86"
+    buildResult:
+      variable: "CMAKE_CXX_ABI_COMPILED"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/miste/AAAJuego/Opengl-VideoGame/GameCore/Libraries/build/CMakeFiles/CMakeScratch/TryCompile-6jk5ej'
+        
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_0afa1.vcxproj /p:Configuration=Debug /p:Platform=Win32 /p:VisualStudioVersion=17.0 /v:n
+        Versión de MSBuild 17.8.5+b5265ef37 para .NET Framework
+        Compilación iniciada a las 14/09/2024 21:19:30.
+        
+        Proyecto "C:\\Users\\miste\\AAAJuego\\Opengl-VideoGame\\GameCore\\Libraries\\build\\CMakeFiles\\CMakeScratch\\TryCompile-6jk5ej\\cmTC_0afa1.vcxproj" en nodo 1 (destinos predeterminados).
+        PrepareForBuild:
+          Creando directorio "cmTC_0afa1.dir\\Debug\\".
+          La salida estructurada está habilitada. El formato del diagnóstico del compilador reflejará la jerarquía de errores. Consulte https://aka.ms/cpp/structured-output para obtener más detalles.
+          Creando directorio "C:\\Users\\miste\\AAAJuego\\Opengl-VideoGame\\GameCore\\Libraries\\build\\CMakeFiles\\CMakeScratch\\TryCompile-6jk5ej\\Debug\\".
+          Creando directorio "cmTC_0afa1.dir\\Debug\\cmTC_0afa1.tlog\\".
+        InitializeBuildStatus:
+          Se creará "cmTC_0afa1.dir\\Debug\\cmTC_0afa1.tlog\\unsuccessfulbuild" porque se especificó "AlwaysCreate".
+          Aplicando tarea Touch a "cmTC_0afa1.dir\\Debug\\cmTC_0afa1.tlog\\unsuccessfulbuild".
+        ClCompile:
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\bin\\HostX64\\x86\\CL.exe /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /Oy- /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_0afa1.dir\\Debug\\\\" /Fd"cmTC_0afa1.dir\\Debug\\vc143.pdb" /external:W1 /Gd /TP /analyze- /errorReport:queue "C:\\Program Files\\CMake\\share\\cmake-3.30\\Modules\\CMakeCXXCompilerABI.cpp"
+          Compilador de optimización de C/C++ de Microsoft (R) versión 19.38.33135 para x86
+          (C) Microsoft Corporation. Todos los derechos reservados.
+          cl /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /Oy- /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_0afa1.dir\\Debug\\\\" /Fd"cmTC_0afa1.dir\\Debug\\vc143.pdb" /external:W1 /Gd /TP /analyze- /errorReport:queue "C:\\Program Files\\CMake\\share\\cmake-3.30\\Modules\\CMakeCXXCompilerABI.cpp"
+          CMakeCXXCompilerABI.cpp
+        Link:
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\bin\\HostX64\\x86\\link.exe /ERRORREPORT:QUEUE /OUT:"C:\\Users\\miste\\AAAJuego\\Opengl-VideoGame\\GameCore\\Libraries\\build\\CMakeFiles\\CMakeScratch\\TryCompile-6jk5ej\\Debug\\cmTC_0afa1.exe" /INCREMENTAL /ILK:"cmTC_0afa1.dir\\Debug\\cmTC_0afa1.ilk" /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Users/miste/AAAJuego/Opengl-VideoGame/GameCore/Libraries/build/CMakeFiles/CMakeScratch/TryCompile-6jk5ej/Debug/cmTC_0afa1.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/Users/miste/AAAJuego/Opengl-VideoGame/GameCore/Libraries/build/CMakeFiles/CMakeScratch/TryCompile-6jk5ej/Debug/cmTC_0afa1.lib" /MACHINE:X86  /machine:X86 cmTC_0afa1.dir\\Debug\\CMakeCXXCompilerABI.obj
+          cmTC_0afa1.vcxproj -> C:\\Users\\miste\\AAAJuego\\Opengl-VideoGame\\GameCore\\Libraries\\build\\CMakeFiles\\CMakeScratch\\TryCompile-6jk5ej\\Debug\\cmTC_0afa1.exe
+        FinalizeBuildStatus:
+          Se eliminará el archivo "cmTC_0afa1.dir\\Debug\\cmTC_0afa1.tlog\\unsuccessfulbuild".
+          Aplicando tarea Touch a "cmTC_0afa1.dir\\Debug\\cmTC_0afa1.tlog\\cmTC_0afa1.lastbuildstate".
+        Compilación del proyecto terminada "C:\\Users\\miste\\AAAJuego\\Opengl-VideoGame\\GameCore\\Libraries\\build\\CMakeFiles\\CMakeScratch\\TryCompile-6jk5ej\\cmTC_0afa1.vcxproj" (destinos predeterminados).
+        
+        Compilación correcta.
+            0 Advertencia(s)
+            0 Errores
+        
+        Tiempo transcurrido 00:00:00.54
+        
+      exitCode: 0
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-3.30/Modules/CMakeDetermineCompilerABI.cmake:218 (message)"
+      - "C:/Program Files/CMake/share/cmake-3.30/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:74 (PROJECT)"
+    message: |
+      Parsed CXX implicit link information:
+        link line regex: [^( *|.*[/\\])(ld[0-9]*(\\.[a-z]+)?|link\\.exe|lld-link(\\.exe)?|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
+        linker tool regex: [^[ 	]*(->|")?[ 	]*(([^"]*[/\\])?(ld[0-9]*(\\.[a-z]+)?|link\\.exe|lld-link(\\.exe)?))("|,| |$)]
+        linker tool for 'CXX': C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.38.33130/bin/HostX64/x86/link.exe
+        implicit libs: []
+        implicit objs: []
+        implicit dirs: []
+        implicit fwks: []
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-3.30/Modules/Internal/CMakeDetermineLinkerId.cmake:40 (message)"
+      - "C:/Program Files/CMake/share/cmake-3.30/Modules/CMakeDetermineCompilerABI.cmake:255 (cmake_determine_linker_id)"
+      - "C:/Program Files/CMake/share/cmake-3.30/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:74 (PROJECT)"
+    message: |
+      Running the CXX compiler's linker: "C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.38.33130/bin/HostX64/x86/link.exe" "-v"
+      Microsoft (R) Incremental Linker Version 14.38.33135.0
+      Copyright (C) Microsoft Corporation.  All rights reserved.
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-3.30/Modules/CheckIncludeFile.cmake:90 (try_compile)"
+      - "contrib/zlib/CMakeLists.txt:35 (check_include_file)"
+    checks:
+      - "Looking for sys/types.h"
+    directories:
+      source: "C:/Users/miste/AAAJuego/Opengl-VideoGame/GameCore/Libraries/build/CMakeFiles/CMakeScratch/TryCompile-0ee3xv"
+      binary: "C:/Users/miste/AAAJuego/Opengl-VideoGame/GameCore/Libraries/build/CMakeFiles/CMakeScratch/TryCompile-0ee3xv"
+    cmakeVariables:
+      CMAKE_C_FLAGS: "/DWIN32 /D_WINDOWS"
+      CMAKE_C_FLAGS_DEBUG: "/Zi /Ob0 /Od /RTC1"
+      CMAKE_EXE_LINKER_FLAGS: "/machine:X86"
+      CMAKE_MODULE_PATH: "C:/Users/miste/AAAJuego/Opengl-VideoGame/GameCore/Libraries/assimp-master/cmake-modules"
+    buildResult:
+      variable: "HAVE_SYS_TYPES_H"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/miste/AAAJuego/Opengl-VideoGame/GameCore/Libraries/build/CMakeFiles/CMakeScratch/TryCompile-0ee3xv'
+        
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_626d5.vcxproj /p:Configuration=Debug /p:Platform=Win32 /p:VisualStudioVersion=17.0 /v:n
+        Versión de MSBuild 17.8.5+b5265ef37 para .NET Framework
+        Compilación iniciada a las 14/09/2024 21:19:31.
+        
+        Proyecto "C:\\Users\\miste\\AAAJuego\\Opengl-VideoGame\\GameCore\\Libraries\\build\\CMakeFiles\\CMakeScratch\\TryCompile-0ee3xv\\cmTC_626d5.vcxproj" en nodo 1 (destinos predeterminados).
+        PrepareForBuild:
+          Creando directorio "cmTC_626d5.dir\\Debug\\".
+          La salida estructurada está habilitada. El formato del diagnóstico del compilador reflejará la jerarquía de errores. Consulte https://aka.ms/cpp/structured-output para obtener más detalles.
+          Creando directorio "C:\\Users\\miste\\AAAJuego\\Opengl-VideoGame\\GameCore\\Libraries\\build\\CMakeFiles\\CMakeScratch\\TryCompile-0ee3xv\\Debug\\".
+          Creando directorio "cmTC_626d5.dir\\Debug\\cmTC_626d5.tlog\\".
+        InitializeBuildStatus:
+          Se creará "cmTC_626d5.dir\\Debug\\cmTC_626d5.tlog\\unsuccessfulbuild" porque se especificó "AlwaysCreate".
+          Aplicando tarea Touch a "cmTC_626d5.dir\\Debug\\cmTC_626d5.tlog\\unsuccessfulbuild".
+        ClCompile:
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\bin\\HostX64\\x86\\CL.exe /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /Oy- /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_626d5.dir\\Debug\\\\" /Fd"cmTC_626d5.dir\\Debug\\vc143.pdb" /external:W1 /Gd /TC /analyze- /errorReport:queue "C:\\Users\\miste\\AAAJuego\\Opengl-VideoGame\\GameCore\\Libraries\\build\\CMakeFiles\\CMakeScratch\\TryCompile-0ee3xv\\CheckIncludeFile.c"
+          Compilador de optimización de C/C++ de Microsoft (R) versión 19.38.33135 para x86
+          (C) Microsoft Corporation. Todos los derechos reservados.
+          cl /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /Oy- /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_626d5.dir\\Debug\\\\" /Fd"cmTC_626d5.dir\\Debug\\vc143.pdb" /external:W1 /Gd /TC /analyze- /errorReport:queue "C:\\Users\\miste\\AAAJuego\\Opengl-VideoGame\\GameCore\\Libraries\\build\\CMakeFiles\\CMakeScratch\\TryCompile-0ee3xv\\CheckIncludeFile.c"
+          CheckIncludeFile.c
+        Link:
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\bin\\HostX64\\x86\\link.exe /ERRORREPORT:QUEUE /OUT:"C:\\Users\\miste\\AAAJuego\\Opengl-VideoGame\\GameCore\\Libraries\\build\\CMakeFiles\\CMakeScratch\\TryCompile-0ee3xv\\Debug\\cmTC_626d5.exe" /INCREMENTAL /ILK:"cmTC_626d5.dir\\Debug\\cmTC_626d5.ilk" /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Users/miste/AAAJuego/Opengl-VideoGame/GameCore/Libraries/build/CMakeFiles/CMakeScratch/TryCompile-0ee3xv/Debug/cmTC_626d5.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/Users/miste/AAAJuego/Opengl-VideoGame/GameCore/Libraries/build/CMakeFiles/CMakeScratch/TryCompile-0ee3xv/Debug/cmTC_626d5.lib" /MACHINE:X86  /machine:X86 cmTC_626d5.dir\\Debug\\CheckIncludeFile.obj
+          cmTC_626d5.vcxproj -> C:\\Users\\miste\\AAAJuego\\Opengl-VideoGame\\GameCore\\Libraries\\build\\CMakeFiles\\CMakeScratch\\TryCompile-0ee3xv\\Debug\\cmTC_626d5.exe
+        FinalizeBuildStatus:
+          Se eliminará el archivo "cmTC_626d5.dir\\Debug\\cmTC_626d5.tlog\\unsuccessfulbuild".
+          Aplicando tarea Touch a "cmTC_626d5.dir\\Debug\\cmTC_626d5.tlog\\cmTC_626d5.lastbuildstate".
+        Compilación del proyecto terminada "C:\\Users\\miste\\AAAJuego\\Opengl-VideoGame\\GameCore\\Libraries\\build\\CMakeFiles\\CMakeScratch\\TryCompile-0ee3xv\\cmTC_626d5.vcxproj" (destinos predeterminados).
+        
+        Compilación correcta.
+            0 Advertencia(s)
+            0 Errores
+        
+        Tiempo transcurrido 00:00:00.55
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-3.30/Modules/CheckIncludeFile.cmake:90 (try_compile)"
+      - "contrib/zlib/CMakeLists.txt:36 (check_include_file)"
+    checks:
+      - "Looking for stdint.h"
+    directories:
+      source: "C:/Users/miste/AAAJuego/Opengl-VideoGame/GameCore/Libraries/build/CMakeFiles/CMakeScratch/TryCompile-h5ztbj"
+      binary: "C:/Users/miste/AAAJuego/Opengl-VideoGame/GameCore/Libraries/build/CMakeFiles/CMakeScratch/TryCompile-h5ztbj"
+    cmakeVariables:
+      CMAKE_C_FLAGS: "/DWIN32 /D_WINDOWS"
+      CMAKE_C_FLAGS_DEBUG: "/Zi /Ob0 /Od /RTC1"
+      CMAKE_EXE_LINKER_FLAGS: "/machine:X86"
+      CMAKE_MODULE_PATH: "C:/Users/miste/AAAJuego/Opengl-VideoGame/GameCore/Libraries/assimp-master/cmake-modules"
+    buildResult:
+      variable: "HAVE_STDINT_H"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/miste/AAAJuego/Opengl-VideoGame/GameCore/Libraries/build/CMakeFiles/CMakeScratch/TryCompile-h5ztbj'
+        
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_cf508.vcxproj /p:Configuration=Debug /p:Platform=Win32 /p:VisualStudioVersion=17.0 /v:n
+        Versión de MSBuild 17.8.5+b5265ef37 para .NET Framework
+        Compilación iniciada a las 14/09/2024 21:19:32.
+        
+        Proyecto "C:\\Users\\miste\\AAAJuego\\Opengl-VideoGame\\GameCore\\Libraries\\build\\CMakeFiles\\CMakeScratch\\TryCompile-h5ztbj\\cmTC_cf508.vcxproj" en nodo 1 (destinos predeterminados).
+        PrepareForBuild:
+          Creando directorio "cmTC_cf508.dir\\Debug\\".
+          La salida estructurada está habilitada. El formato del diagnóstico del compilador reflejará la jerarquía de errores. Consulte https://aka.ms/cpp/structured-output para obtener más detalles.
+          Creando directorio "C:\\Users\\miste\\AAAJuego\\Opengl-VideoGame\\GameCore\\Libraries\\build\\CMakeFiles\\CMakeScratch\\TryCompile-h5ztbj\\Debug\\".
+          Creando directorio "cmTC_cf508.dir\\Debug\\cmTC_cf508.tlog\\".
+        InitializeBuildStatus:
+          Se creará "cmTC_cf508.dir\\Debug\\cmTC_cf508.tlog\\unsuccessfulbuild" porque se especificó "AlwaysCreate".
+          Aplicando tarea Touch a "cmTC_cf508.dir\\Debug\\cmTC_cf508.tlog\\unsuccessfulbuild".
+        ClCompile:
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\bin\\HostX64\\x86\\CL.exe /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /Oy- /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_cf508.dir\\Debug\\\\" /Fd"cmTC_cf508.dir\\Debug\\vc143.pdb" /external:W1 /Gd /TC /analyze- /errorReport:queue "C:\\Users\\miste\\AAAJuego\\Opengl-VideoGame\\GameCore\\Libraries\\build\\CMakeFiles\\CMakeScratch\\TryCompile-h5ztbj\\CheckIncludeFile.c"
+          Compilador de optimización de C/C++ de Microsoft (R) versión 19.38.33135 para x86
+          (C) Microsoft Corporation. Todos los derechos reservados.
+          cl /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /Oy- /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_cf508.dir\\Debug\\\\" /Fd"cmTC_cf508.dir\\Debug\\vc143.pdb" /external:W1 /Gd /TC /analyze- /errorReport:queue "C:\\Users\\miste\\AAAJuego\\Opengl-VideoGame\\GameCore\\Libraries\\build\\CMakeFiles\\CMakeScratch\\TryCompile-h5ztbj\\CheckIncludeFile.c"
+          CheckIncludeFile.c
+        Link:
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\bin\\HostX64\\x86\\link.exe /ERRORREPORT:QUEUE /OUT:"C:\\Users\\miste\\AAAJuego\\Opengl-VideoGame\\GameCore\\Libraries\\build\\CMakeFiles\\CMakeScratch\\TryCompile-h5ztbj\\Debug\\cmTC_cf508.exe" /INCREMENTAL /ILK:"cmTC_cf508.dir\\Debug\\cmTC_cf508.ilk" /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Users/miste/AAAJuego/Opengl-VideoGame/GameCore/Libraries/build/CMakeFiles/CMakeScratch/TryCompile-h5ztbj/Debug/cmTC_cf508.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/Users/miste/AAAJuego/Opengl-VideoGame/GameCore/Libraries/build/CMakeFiles/CMakeScratch/TryCompile-h5ztbj/Debug/cmTC_cf508.lib" /MACHINE:X86  /machine:X86 cmTC_cf508.dir\\Debug\\CheckIncludeFile.obj
+          cmTC_cf508.vcxproj -> C:\\Users\\miste\\AAAJuego\\Opengl-VideoGame\\GameCore\\Libraries\\build\\CMakeFiles\\CMakeScratch\\TryCompile-h5ztbj\\Debug\\cmTC_cf508.exe
+        FinalizeBuildStatus:
+          Se eliminará el archivo "cmTC_cf508.dir\\Debug\\cmTC_cf508.tlog\\unsuccessfulbuild".
+          Aplicando tarea Touch a "cmTC_cf508.dir\\Debug\\cmTC_cf508.tlog\\cmTC_cf508.lastbuildstate".
+        Compilación del proyecto terminada "C:\\Users\\miste\\AAAJuego\\Opengl-VideoGame\\GameCore\\Libraries\\build\\CMakeFiles\\CMakeScratch\\TryCompile-h5ztbj\\cmTC_cf508.vcxproj" (destinos predeterminados).
+        
+        Compilación correcta.
+            0 Advertencia(s)
+            0 Errores
+        
+        Tiempo transcurrido 00:00:00.55
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-3.30/Modules/CheckIncludeFile.cmake:90 (try_compile)"
+      - "contrib/zlib/CMakeLists.txt:37 (check_include_file)"
+    checks:
+      - "Looking for stddef.h"
+    directories:
+      source: "C:/Users/miste/AAAJuego/Opengl-VideoGame/GameCore/Libraries/build/CMakeFiles/CMakeScratch/TryCompile-lp4p0r"
+      binary: "C:/Users/miste/AAAJuego/Opengl-VideoGame/GameCore/Libraries/build/CMakeFiles/CMakeScratch/TryCompile-lp4p0r"
+    cmakeVariables:
+      CMAKE_C_FLAGS: "/DWIN32 /D_WINDOWS"
+      CMAKE_C_FLAGS_DEBUG: "/Zi /Ob0 /Od /RTC1"
+      CMAKE_EXE_LINKER_FLAGS: "/machine:X86"
+      CMAKE_MODULE_PATH: "C:/Users/miste/AAAJuego/Opengl-VideoGame/GameCore/Libraries/assimp-master/cmake-modules"
+    buildResult:
+      variable: "HAVE_STDDEF_H"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/miste/AAAJuego/Opengl-VideoGame/GameCore/Libraries/build/CMakeFiles/CMakeScratch/TryCompile-lp4p0r'
+        
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_f9b99.vcxproj /p:Configuration=Debug /p:Platform=Win32 /p:VisualStudioVersion=17.0 /v:n
+        Versión de MSBuild 17.8.5+b5265ef37 para .NET Framework
+        Compilación iniciada a las 14/09/2024 21:19:32.
+        
+        Proyecto "C:\\Users\\miste\\AAAJuego\\Opengl-VideoGame\\GameCore\\Libraries\\build\\CMakeFiles\\CMakeScratch\\TryCompile-lp4p0r\\cmTC_f9b99.vcxproj" en nodo 1 (destinos predeterminados).
+        PrepareForBuild:
+          Creando directorio "cmTC_f9b99.dir\\Debug\\".
+          La salida estructurada está habilitada. El formato del diagnóstico del compilador reflejará la jerarquía de errores. Consulte https://aka.ms/cpp/structured-output para obtener más detalles.
+          Creando directorio "C:\\Users\\miste\\AAAJuego\\Opengl-VideoGame\\GameCore\\Libraries\\build\\CMakeFiles\\CMakeScratch\\TryCompile-lp4p0r\\Debug\\".
+          Creando directorio "cmTC_f9b99.dir\\Debug\\cmTC_f9b99.tlog\\".
+        InitializeBuildStatus:
+          Se creará "cmTC_f9b99.dir\\Debug\\cmTC_f9b99.tlog\\unsuccessfulbuild" porque se especificó "AlwaysCreate".
+          Aplicando tarea Touch a "cmTC_f9b99.dir\\Debug\\cmTC_f9b99.tlog\\unsuccessfulbuild".
+        ClCompile:
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\bin\\HostX64\\x86\\CL.exe /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /Oy- /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_f9b99.dir\\Debug\\\\" /Fd"cmTC_f9b99.dir\\Debug\\vc143.pdb" /external:W1 /Gd /TC /analyze- /errorReport:queue "C:\\Users\\miste\\AAAJuego\\Opengl-VideoGame\\GameCore\\Libraries\\build\\CMakeFiles\\CMakeScratch\\TryCompile-lp4p0r\\CheckIncludeFile.c"
+          Compilador de optimización de C/C++ de Microsoft (R) versión 19.38.33135 para x86
+          (C) Microsoft Corporation. Todos los derechos reservados.
+          cl /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /Oy- /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_f9b99.dir\\Debug\\\\" /Fd"cmTC_f9b99.dir\\Debug\\vc143.pdb" /external:W1 /Gd /TC /analyze- /errorReport:queue "C:\\Users\\miste\\AAAJuego\\Opengl-VideoGame\\GameCore\\Libraries\\build\\CMakeFiles\\CMakeScratch\\TryCompile-lp4p0r\\CheckIncludeFile.c"
+          CheckIncludeFile.c
+        Link:
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\bin\\HostX64\\x86\\link.exe /ERRORREPORT:QUEUE /OUT:"C:\\Users\\miste\\AAAJuego\\Opengl-VideoGame\\GameCore\\Libraries\\build\\CMakeFiles\\CMakeScratch\\TryCompile-lp4p0r\\Debug\\cmTC_f9b99.exe" /INCREMENTAL /ILK:"cmTC_f9b99.dir\\Debug\\cmTC_f9b99.ilk" /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Users/miste/AAAJuego/Opengl-VideoGame/GameCore/Libraries/build/CMakeFiles/CMakeScratch/TryCompile-lp4p0r/Debug/cmTC_f9b99.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/Users/miste/AAAJuego/Opengl-VideoGame/GameCore/Libraries/build/CMakeFiles/CMakeScratch/TryCompile-lp4p0r/Debug/cmTC_f9b99.lib" /MACHINE:X86  /machine:X86 cmTC_f9b99.dir\\Debug\\CheckIncludeFile.obj
+          cmTC_f9b99.vcxproj -> C:\\Users\\miste\\AAAJuego\\Opengl-VideoGame\\GameCore\\Libraries\\build\\CMakeFiles\\CMakeScratch\\TryCompile-lp4p0r\\Debug\\cmTC_f9b99.exe
+        FinalizeBuildStatus:
+          Se eliminará el archivo "cmTC_f9b99.dir\\Debug\\cmTC_f9b99.tlog\\unsuccessfulbuild".
+          Aplicando tarea Touch a "cmTC_f9b99.dir\\Debug\\cmTC_f9b99.tlog\\cmTC_f9b99.lastbuildstate".
+        Compilación del proyecto terminada "C:\\Users\\miste\\AAAJuego\\Opengl-VideoGame\\GameCore\\Libraries\\build\\CMakeFiles\\CMakeScratch\\TryCompile-lp4p0r\\cmTC_f9b99.vcxproj" (destinos predeterminados).
+        
+        Compilación correcta.
+            0 Advertencia(s)
+            0 Errores
+        
+        Tiempo transcurrido 00:00:00.53
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-3.30/Modules/CheckTypeSize.cmake:147 (try_compile)"
+      - "C:/Program Files/CMake/share/cmake-3.30/Modules/CheckTypeSize.cmake:272 (__check_type_size_impl)"
+      - "contrib/zlib/CMakeLists.txt:55 (check_type_size)"
+    checks:
+      - "Check size of off64_t"
+    directories:
+      source: "C:/Users/miste/AAAJuego/Opengl-VideoGame/GameCore/Libraries/build/CMakeFiles/CMakeScratch/TryCompile-e344ba"
+      binary: "C:/Users/miste/AAAJuego/Opengl-VideoGame/GameCore/Libraries/build/CMakeFiles/CMakeScratch/TryCompile-e344ba"
+    cmakeVariables:
+      CMAKE_C_FLAGS: "/DWIN32 /D_WINDOWS"
+      CMAKE_C_FLAGS_DEBUG: "/Zi /Ob0 /Od /RTC1"
+      CMAKE_EXE_LINKER_FLAGS: "/machine:X86"
+      CMAKE_MODULE_PATH: "C:/Users/miste/AAAJuego/Opengl-VideoGame/GameCore/Libraries/assimp-master/cmake-modules"
+    buildResult:
+      variable: "HAVE_OFF64_T"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/miste/AAAJuego/Opengl-VideoGame/GameCore/Libraries/build/CMakeFiles/CMakeScratch/TryCompile-e344ba'
+        
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_b39d0.vcxproj /p:Configuration=Debug /p:Platform=Win32 /p:VisualStudioVersion=17.0 /v:n
+        Versión de MSBuild 17.8.5+b5265ef37 para .NET Framework
+        Compilación iniciada a las 14/09/2024 21:19:33.
+        
+        Proyecto "C:\\Users\\miste\\AAAJuego\\Opengl-VideoGame\\GameCore\\Libraries\\build\\CMakeFiles\\CMakeScratch\\TryCompile-e344ba\\cmTC_b39d0.vcxproj" en nodo 1 (destinos predeterminados).
+        PrepareForBuild:
+          Creando directorio "cmTC_b39d0.dir\\Debug\\".
+          La salida estructurada está habilitada. El formato del diagnóstico del compilador reflejará la jerarquía de errores. Consulte https://aka.ms/cpp/structured-output para obtener más detalles.
+          Creando directorio "C:\\Users\\miste\\AAAJuego\\Opengl-VideoGame\\GameCore\\Libraries\\build\\CMakeFiles\\CMakeScratch\\TryCompile-e344ba\\Debug\\".
+          Creando directorio "cmTC_b39d0.dir\\Debug\\cmTC_b39d0.tlog\\".
+        InitializeBuildStatus:
+          Se creará "cmTC_b39d0.dir\\Debug\\cmTC_b39d0.tlog\\unsuccessfulbuild" porque se especificó "AlwaysCreate".
+          Aplicando tarea Touch a "cmTC_b39d0.dir\\Debug\\cmTC_b39d0.tlog\\unsuccessfulbuild".
+        ClCompile:
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\bin\\HostX64\\x86\\CL.exe /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /Oy- /D _MBCS /D WIN32 /D _WINDOWS /D _LARGEFILE64_SOURCE=1 /D HAVE_SYS_TYPES_H /D HAVE_STDINT_H /D HAVE_STDDEF_H /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_b39d0.dir\\Debug\\\\" /Fd"cmTC_b39d0.dir\\Debug\\vc143.pdb" /external:W1 /Gd /TC /analyze- /errorReport:queue "C:\\Users\\miste\\AAAJuego\\Opengl-VideoGame\\GameCore\\Libraries\\build\\CMakeFiles\\CMakeScratch\\TryCompile-e344ba\\OFF64_T.c"
+          Compilador de optimización de C/C++ de Microsoft (R) versión 19.38.33135 para x86
+          (C) Microsoft Corporation. Todos los derechos reservados.
+          cl /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /Oy- /D _MBCS /D WIN32 /D _WINDOWS /D _LARGEFILE64_SOURCE=1 /D HAVE_SYS_TYPES_H /D HAVE_STDINT_H /D HAVE_STDDEF_H /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_b39d0.dir\\Debug\\\\" /Fd"cmTC_b39d0.dir\\Debug\\vc143.pdb" /external:W1 /Gd /TC /analyze- /errorReport:queue "C:\\Users\\miste\\AAAJuego\\Opengl-VideoGame\\GameCore\\Libraries\\build\\CMakeFiles\\CMakeScratch\\TryCompile-e344ba\\OFF64_T.c"
+          OFF64_T.c
+        C:\\Users\\miste\\AAAJuego\\Opengl-VideoGame\\GameCore\\Libraries\\build\\CMakeFiles\\CMakeScratch\\TryCompile-e344ba\\OFF64_T.c(29,12): error C2065: 'off64_t': identificador no declarado [C:\\Users\\miste\\AAAJuego\\Opengl-VideoGame\\GameCore\\Libraries\\build\\CMakeFiles\\CMakeScratch\\TryCompile-e344ba\\cmTC_b39d0.vcxproj]
+        C:\\Users\\miste\\AAAJuego\\Opengl-VideoGame\\GameCore\\Libraries\\build\\CMakeFiles\\CMakeScratch\\TryCompile-e344ba\\OFF64_T.c(30,12): error C2065: 'off64_t': identificador no declarado [C:\\Users\\miste\\AAAJuego\\Opengl-VideoGame\\GameCore\\Libraries\\build\\CMakeFiles\\CMakeScratch\\TryCompile-e344ba\\cmTC_b39d0.vcxproj]
+        C:\\Users\\miste\\AAAJuego\\Opengl-VideoGame\\GameCore\\Libraries\\build\\CMakeFiles\\CMakeScratch\\TryCompile-e344ba\\OFF64_T.c(31,12): error C2065: 'off64_t': identificador no declarado [C:\\Users\\miste\\AAAJuego\\Opengl-VideoGame\\GameCore\\Libraries\\build\\CMakeFiles\\CMakeScratch\\TryCompile-e344ba\\cmTC_b39d0.vcxproj]
+        C:\\Users\\miste\\AAAJuego\\Opengl-VideoGame\\GameCore\\Libraries\\build\\CMakeFiles\\CMakeScratch\\TryCompile-e344ba\\OFF64_T.c(32,12): error C2065: 'off64_t': identificador no declarado [C:\\Users\\miste\\AAAJuego\\Opengl-VideoGame\\GameCore\\Libraries\\build\\CMakeFiles\\CMakeScratch\\TryCompile-e344ba\\cmTC_b39d0.vcxproj]
+        C:\\Users\\miste\\AAAJuego\\Opengl-VideoGame\\GameCore\\Libraries\\build\\CMakeFiles\\CMakeScratch\\TryCompile-e344ba\\OFF64_T.c(33,12): error C2065: 'off64_t': identificador no declarado [C:\\Users\\miste\\AAAJuego\\Opengl-VideoGame\\GameCore\\Libraries\\build\\CMakeFiles\\CMakeScratch\\TryCompile-e344ba\\cmTC_b39d0.vcxproj]
+        Compilación del proyecto terminada "C:\\Users\\miste\\AAAJuego\\Opengl-VideoGame\\GameCore\\Libraries\\build\\CMakeFiles\\CMakeScratch\\TryCompile-e344ba\\cmTC_b39d0.vcxproj" (destinos predeterminados) -- ERROR.
+        
+        ERROR al compilar.
+        
+        "C:\\Users\\miste\\AAAJuego\\Opengl-VideoGame\\GameCore\\Libraries\\build\\CMakeFiles\\CMakeScratch\\TryCompile-e344ba\\cmTC_b39d0.vcxproj" (destino predeterminado) (1) ->
+        (ClCompile destino) -> 
+          C:\\Users\\miste\\AAAJuego\\Opengl-VideoGame\\GameCore\\Libraries\\build\\CMakeFiles\\CMakeScratch\\TryCompile-e344ba\\OFF64_T.c(29,12): error C2065: 'off64_t': identificador no declarado [C:\\Users\\miste\\AAAJuego\\Opengl-VideoGame\\GameCore\\Libraries\\build\\CMakeFiles\\CMakeScratch\\TryCompile-e344ba\\cmTC_b39d0.vcxproj]
+          C:\\Users\\miste\\AAAJuego\\Opengl-VideoGame\\GameCore\\Libraries\\build\\CMakeFiles\\CMakeScratch\\TryCompile-e344ba\\OFF64_T.c(30,12): error C2065: 'off64_t': identificador no declarado [C:\\Users\\miste\\AAAJuego\\Opengl-VideoGame\\GameCore\\Libraries\\build\\CMakeFiles\\CMakeScratch\\TryCompile-e344ba\\cmTC_b39d0.vcxproj]
+          C:\\Users\\miste\\AAAJuego\\Opengl-VideoGame\\GameCore\\Libraries\\build\\CMakeFiles\\CMakeScratch\\TryCompile-e344ba\\OFF64_T.c(31,12): error C2065: 'off64_t': identificador no declarado [C:\\Users\\miste\\AAAJuego\\Opengl-VideoGame\\GameCore\\Libraries\\build\\CMakeFiles\\CMakeScratch\\TryCompile-e344ba\\cmTC_b39d0.vcxproj]
+          C:\\Users\\miste\\AAAJuego\\Opengl-VideoGame\\GameCore\\Libraries\\build\\CMakeFiles\\CMakeScratch\\TryCompile-e344ba\\OFF64_T.c(32,12): error C2065: 'off64_t': identificador no declarado [C:\\Users\\miste\\AAAJuego\\Opengl-VideoGame\\GameCore\\Libraries\\build\\CMakeFiles\\CMakeScratch\\TryCompile-e344ba\\cmTC_b39d0.vcxproj]
+          C:\\Users\\miste\\AAAJuego\\Opengl-VideoGame\\GameCore\\Libraries\\build\\CMakeFiles\\CMakeScratch\\TryCompile-e344ba\\OFF64_T.c(33,12): error C2065: 'off64_t': identificador no declarado [C:\\Users\\miste\\AAAJuego\\Opengl-VideoGame\\GameCore\\Libraries\\build\\CMakeFiles\\CMakeScratch\\TryCompile-e344ba\\cmTC_b39d0.vcxproj]
+        
+            0 Advertencia(s)
+            5 Errores
+        
+        Tiempo transcurrido 00:00:00.35
+        
+      exitCode: 1
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-3.30/Modules/CheckFunctionExists.cmake:86 (try_compile)"
+      - "contrib/zlib/CMakeLists.txt:64 (check_function_exists)"
+    checks:
+      - "Looking for fseeko"
+    directories:
+      source: "C:/Users/miste/AAAJuego/Opengl-VideoGame/GameCore/Libraries/build/CMakeFiles/CMakeScratch/TryCompile-rphggc"
+      binary: "C:/Users/miste/AAAJuego/Opengl-VideoGame/GameCore/Libraries/build/CMakeFiles/CMakeScratch/TryCompile-rphggc"
+    cmakeVariables:
+      CMAKE_C_FLAGS: "/DWIN32 /D_WINDOWS"
+      CMAKE_C_FLAGS_DEBUG: "/Zi /Ob0 /Od /RTC1"
+      CMAKE_EXE_LINKER_FLAGS: "/machine:X86"
+      CMAKE_MODULE_PATH: "C:/Users/miste/AAAJuego/Opengl-VideoGame/GameCore/Libraries/assimp-master/cmake-modules"
+    buildResult:
+      variable: "HAVE_FSEEKO"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/miste/AAAJuego/Opengl-VideoGame/GameCore/Libraries/build/CMakeFiles/CMakeScratch/TryCompile-rphggc'
+        
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_6618a.vcxproj /p:Configuration=Debug /p:Platform=Win32 /p:VisualStudioVersion=17.0 /v:n
+        Versión de MSBuild 17.8.5+b5265ef37 para .NET Framework
+        Compilación iniciada a las 14/09/2024 21:19:34.
+        
+        Proyecto "C:\\Users\\miste\\AAAJuego\\Opengl-VideoGame\\GameCore\\Libraries\\build\\CMakeFiles\\CMakeScratch\\TryCompile-rphggc\\cmTC_6618a.vcxproj" en nodo 1 (destinos predeterminados).
+        PrepareForBuild:
+          Creando directorio "cmTC_6618a.dir\\Debug\\".
+          La salida estructurada está habilitada. El formato del diagnóstico del compilador reflejará la jerarquía de errores. Consulte https://aka.ms/cpp/structured-output para obtener más detalles.
+          Creando directorio "C:\\Users\\miste\\AAAJuego\\Opengl-VideoGame\\GameCore\\Libraries\\build\\CMakeFiles\\CMakeScratch\\TryCompile-rphggc\\Debug\\".
+          Creando directorio "cmTC_6618a.dir\\Debug\\cmTC_6618a.tlog\\".
+        InitializeBuildStatus:
+          Se creará "cmTC_6618a.dir\\Debug\\cmTC_6618a.tlog\\unsuccessfulbuild" porque se especificó "AlwaysCreate".
+          Aplicando tarea Touch a "cmTC_6618a.dir\\Debug\\cmTC_6618a.tlog\\unsuccessfulbuild".
+        ClCompile:
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\bin\\HostX64\\x86\\CL.exe /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /Oy- /D _MBCS /D WIN32 /D _WINDOWS /D CHECK_FUNCTION_EXISTS=fseeko /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_6618a.dir\\Debug\\\\" /Fd"cmTC_6618a.dir\\Debug\\vc143.pdb" /external:W1 /Gd /TC /analyze- /errorReport:queue "C:\\Users\\miste\\AAAJuego\\Opengl-VideoGame\\GameCore\\Libraries\\build\\CMakeFiles\\CMakeScratch\\TryCompile-rphggc\\CheckFunctionExists.c"
+          Compilador de optimización de C/C++ de Microsoft (R) versión 19.38.33135 para x86
+          (C) Microsoft Corporation. Todos los derechos reservados.
+          cl /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /Oy- /D _MBCS /D WIN32 /D _WINDOWS /D CHECK_FUNCTION_EXISTS=fseeko /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_6618a.dir\\Debug\\\\" /Fd"cmTC_6618a.dir\\Debug\\vc143.pdb" /external:W1 /Gd /TC /analyze- /errorReport:queue "C:\\Users\\miste\\AAAJuego\\Opengl-VideoGame\\GameCore\\Libraries\\build\\CMakeFiles\\CMakeScratch\\TryCompile-rphggc\\CheckFunctionExists.c"
+          CheckFunctionExists.c
+        Link:
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\bin\\HostX64\\x86\\link.exe /ERRORREPORT:QUEUE /OUT:"C:\\Users\\miste\\AAAJuego\\Opengl-VideoGame\\GameCore\\Libraries\\build\\CMakeFiles\\CMakeScratch\\TryCompile-rphggc\\Debug\\cmTC_6618a.exe" /INCREMENTAL /ILK:"cmTC_6618a.dir\\Debug\\cmTC_6618a.ilk" /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Users/miste/AAAJuego/Opengl-VideoGame/GameCore/Libraries/build/CMakeFiles/CMakeScratch/TryCompile-rphggc/Debug/cmTC_6618a.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/Users/miste/AAAJuego/Opengl-VideoGame/GameCore/Libraries/build/CMakeFiles/CMakeScratch/TryCompile-rphggc/Debug/cmTC_6618a.lib" /MACHINE:X86  /machine:X86 cmTC_6618a.dir\\Debug\\CheckFunctionExists.obj
+        CheckFunctionExists.obj : error LNK2019: símbolo externo _fseeko sin resolver al que se hace referencia en la función _main [C:\\Users\\miste\\AAAJuego\\Opengl-VideoGame\\GameCore\\Libraries\\build\\CMakeFiles\\CMakeScratch\\TryCompile-rphggc\\cmTC_6618a.vcxproj]
+        C:\\Users\\miste\\AAAJuego\\Opengl-VideoGame\\GameCore\\Libraries\\build\\CMakeFiles\\CMakeScratch\\TryCompile-rphggc\\Debug\\cmTC_6618a.exe : fatal error LNK1120: 1 externos sin resolver [C:\\Users\\miste\\AAAJuego\\Opengl-VideoGame\\GameCore\\Libraries\\build\\CMakeFiles\\CMakeScratch\\TryCompile-rphggc\\cmTC_6618a.vcxproj]
+        Compilación del proyecto terminada "C:\\Users\\miste\\AAAJuego\\Opengl-VideoGame\\GameCore\\Libraries\\build\\CMakeFiles\\CMakeScratch\\TryCompile-rphggc\\cmTC_6618a.vcxproj" (destinos predeterminados) -- ERROR.
+        
+        ERROR al compilar.
+        
+        "C:\\Users\\miste\\AAAJuego\\Opengl-VideoGame\\GameCore\\Libraries\\build\\CMakeFiles\\CMakeScratch\\TryCompile-rphggc\\cmTC_6618a.vcxproj" (destino predeterminado) (1) ->
+        (Link destino) -> 
+          CheckFunctionExists.obj : error LNK2019: símbolo externo _fseeko sin resolver al que se hace referencia en la función _main [C:\\Users\\miste\\AAAJuego\\Opengl-VideoGame\\GameCore\\Libraries\\build\\CMakeFiles\\CMakeScratch\\TryCompile-rphggc\\cmTC_6618a.vcxproj]
+          C:\\Users\\miste\\AAAJuego\\Opengl-VideoGame\\GameCore\\Libraries\\build\\CMakeFiles\\CMakeScratch\\TryCompile-rphggc\\Debug\\cmTC_6618a.exe : fatal error LNK1120: 1 externos sin resolver [C:\\Users\\miste\\AAAJuego\\Opengl-VideoGame\\GameCore\\Libraries\\build\\CMakeFiles\\CMakeScratch\\TryCompile-rphggc\\cmTC_6618a.vcxproj]
+        
+            0 Advertencia(s)
+            2 Errores
+        
+        Tiempo transcurrido 00:00:00.54
+        
+      exitCode: 1
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-3.30/Modules/CheckIncludeFile.cmake:90 (try_compile)"
+      - "contrib/zlib/CMakeLists.txt:72 (check_include_file)"
+    checks:
+      - "Looking for unistd.h"
+    directories:
+      source: "C:/Users/miste/AAAJuego/Opengl-VideoGame/GameCore/Libraries/build/CMakeFiles/CMakeScratch/TryCompile-59xlun"
+      binary: "C:/Users/miste/AAAJuego/Opengl-VideoGame/GameCore/Libraries/build/CMakeFiles/CMakeScratch/TryCompile-59xlun"
+    cmakeVariables:
+      CMAKE_C_FLAGS: "/DWIN32 /D_WINDOWS"
+      CMAKE_C_FLAGS_DEBUG: "/Zi /Ob0 /Od /RTC1"
+      CMAKE_EXE_LINKER_FLAGS: "/machine:X86"
+      CMAKE_MODULE_PATH: "C:/Users/miste/AAAJuego/Opengl-VideoGame/GameCore/Libraries/assimp-master/cmake-modules"
+    buildResult:
+      variable: "Z_HAVE_UNISTD_H"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/miste/AAAJuego/Opengl-VideoGame/GameCore/Libraries/build/CMakeFiles/CMakeScratch/TryCompile-59xlun'
+        
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_d62bf.vcxproj /p:Configuration=Debug /p:Platform=Win32 /p:VisualStudioVersion=17.0 /v:n
+        Versión de MSBuild 17.8.5+b5265ef37 para .NET Framework
+        Compilación iniciada a las 14/09/2024 21:19:34.
+        
+        Proyecto "C:\\Users\\miste\\AAAJuego\\Opengl-VideoGame\\GameCore\\Libraries\\build\\CMakeFiles\\CMakeScratch\\TryCompile-59xlun\\cmTC_d62bf.vcxproj" en nodo 1 (destinos predeterminados).
+        PrepareForBuild:
+          Creando directorio "cmTC_d62bf.dir\\Debug\\".
+          La salida estructurada está habilitada. El formato del diagnóstico del compilador reflejará la jerarquía de errores. Consulte https://aka.ms/cpp/structured-output para obtener más detalles.
+          Creando directorio "C:\\Users\\miste\\AAAJuego\\Opengl-VideoGame\\GameCore\\Libraries\\build\\CMakeFiles\\CMakeScratch\\TryCompile-59xlun\\Debug\\".
+          Creando directorio "cmTC_d62bf.dir\\Debug\\cmTC_d62bf.tlog\\".
+        InitializeBuildStatus:
+          Se creará "cmTC_d62bf.dir\\Debug\\cmTC_d62bf.tlog\\unsuccessfulbuild" porque se especificó "AlwaysCreate".
+          Aplicando tarea Touch a "cmTC_d62bf.dir\\Debug\\cmTC_d62bf.tlog\\unsuccessfulbuild".
+        ClCompile:
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\bin\\HostX64\\x86\\CL.exe /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /Oy- /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_d62bf.dir\\Debug\\\\" /Fd"cmTC_d62bf.dir\\Debug\\vc143.pdb" /external:W1 /Gd /TC /analyze- /errorReport:queue "C:\\Users\\miste\\AAAJuego\\Opengl-VideoGame\\GameCore\\Libraries\\build\\CMakeFiles\\CMakeScratch\\TryCompile-59xlun\\CheckIncludeFile.c"
+          Compilador de optimización de C/C++ de Microsoft (R) versión 19.38.33135 para x86
+          (C) Microsoft Corporation. Todos los derechos reservados.
+          cl /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /Oy- /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_d62bf.dir\\Debug\\\\" /Fd"cmTC_d62bf.dir\\Debug\\vc143.pdb" /external:W1 /Gd /TC /analyze- /errorReport:queue "C:\\Users\\miste\\AAAJuego\\Opengl-VideoGame\\GameCore\\Libraries\\build\\CMakeFiles\\CMakeScratch\\TryCompile-59xlun\\CheckIncludeFile.c"
+          CheckIncludeFile.c
+        C:\\Users\\miste\\AAAJuego\\Opengl-VideoGame\\GameCore\\Libraries\\build\\CMakeFiles\\CMakeScratch\\TryCompile-59xlun\\CheckIncludeFile.c(1,10): error C1083: No se puede abrir el archivo incluir: 'unistd.h': No such file or directory [C:\\Users\\miste\\AAAJuego\\Opengl-VideoGame\\GameCore\\Libraries\\build\\CMakeFiles\\CMakeScratch\\TryCompile-59xlun\\cmTC_d62bf.vcxproj]
+        Compilación del proyecto terminada "C:\\Users\\miste\\AAAJuego\\Opengl-VideoGame\\GameCore\\Libraries\\build\\CMakeFiles\\CMakeScratch\\TryCompile-59xlun\\cmTC_d62bf.vcxproj" (destinos predeterminados) -- ERROR.
+        
+        ERROR al compilar.
+        
+        "C:\\Users\\miste\\AAAJuego\\Opengl-VideoGame\\GameCore\\Libraries\\build\\CMakeFiles\\CMakeScratch\\TryCompile-59xlun\\cmTC_d62bf.vcxproj" (destino predeterminado) (1) ->
+        (ClCompile destino) -> 
+          C:\\Users\\miste\\AAAJuego\\Opengl-VideoGame\\GameCore\\Libraries\\build\\CMakeFiles\\CMakeScratch\\TryCompile-59xlun\\CheckIncludeFile.c(1,10): error C1083: No se puede abrir el archivo incluir: 'unistd.h': No such file or directory [C:\\Users\\miste\\AAAJuego\\Opengl-VideoGame\\GameCore\\Libraries\\build\\CMakeFiles\\CMakeScratch\\TryCompile-59xlun\\cmTC_d62bf.vcxproj]
+        
+            0 Advertencia(s)
+            1 Errores
+        
+        Tiempo transcurrido 00:00:00.36
+        
+      exitCode: 1
+...

@@ -1,0 +1,13 @@
+C:/Users/miste/AAAJuego/Opengl-VideoGame/GameCore/Libraries/build/CMakeFiles/uninstall.dir
+C:/Users/miste/AAAJuego/Opengl-VideoGame/GameCore/Libraries/build/CMakeFiles/UpdateAssimpLibsDebugSymbolsAndDLLs.dir
+C:/Users/miste/AAAJuego/Opengl-VideoGame/GameCore/Libraries/build/CMakeFiles/INSTALL.dir
+C:/Users/miste/AAAJuego/Opengl-VideoGame/GameCore/Libraries/build/CMakeFiles/ALL_BUILD.dir
+C:/Users/miste/AAAJuego/Opengl-VideoGame/GameCore/Libraries/build/CMakeFiles/ZERO_CHECK.dir
+C:/Users/miste/AAAJuego/Opengl-VideoGame/GameCore/Libraries/build/contrib/zlib/CMakeFiles/zlibstatic.dir
+C:/Users/miste/AAAJuego/Opengl-VideoGame/GameCore/Libraries/build/contrib/zlib/CMakeFiles/INSTALL.dir
+C:/Users/miste/AAAJuego/Opengl-VideoGame/GameCore/Libraries/build/contrib/zlib/CMakeFiles/ALL_BUILD.dir
+C:/Users/miste/AAAJuego/Opengl-VideoGame/GameCore/Libraries/build/code/CMakeFiles/assimp.dir
+C:/Users/miste/AAAJuego/Opengl-VideoGame/GameCore/Libraries/build/code/CMakeFiles/INSTALL.dir
+C:/Users/miste/AAAJuego/Opengl-VideoGame/GameCore/Libraries/build/test/CMakeFiles/unit.dir
+C:/Users/miste/AAAJuego/Opengl-VideoGame/GameCore/Libraries/build/test/CMakeFiles/INSTALL.dir
+C:/Users/miste/AAAJuego/Opengl-VideoGame/GameCore/Libraries/build/test/headercheck/CMakeFiles/INSTALL.dir

@@ -96,6 +96,12 @@ int main()
 	Manager manager;
 	manager.loader();
 	
+	const char* path = "GameCore/Models/wolf2.fbx";
+	Model ourModel(path);
+	Animation danceAnimation(path,
+		&ourModel);
+	Animator animator(&danceAnimation);
+
 	// Lazo de la ventana
 	while (!glfwWindowShouldClose(window))
 	{

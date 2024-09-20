@@ -1,4 +1,6 @@
 #include "../Headers/Manager.h"
+#include "../Headers/Frame.h"
+
 
 void Manager::loader() {
 	terrain.prepareTerrain(150, 1, 10, 8); //150 4 10 8 //freq!=size
@@ -6,6 +8,11 @@ void Manager::loader() {
 	
 	player = Player::getPlayer();
 	player->setTerrain(&terrain);
+
+	const char* path = "GameCore/Models/Zombie.dae";
+	ourModel = new Model(path);
+	danceAnimation = new Animation(path, ourModel);
+	animator = new Animator(danceAnimation);
 }
 
 void Manager::run() {
@@ -17,7 +24,10 @@ void Manager::run() {
 
 void Manager::draw() {
 	terrain.draw();
-	grass.draw();
 	
 	//player->draw();
+
+
+	ourModel->Draw(animator);
+	grass.draw();
 }

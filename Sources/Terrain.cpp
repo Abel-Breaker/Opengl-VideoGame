@@ -14,7 +14,7 @@ extern unsigned int terrainShaderProgram;
 //extern unsigned int shaderProgram;
 
 void Terrain::prepareTerrain(int size, int terrainMeshDensity, short frequency, short amplitude) {
-	shaderProgram = ShaderManager::setAndGetShader("C:/Users/miste/AAAJuego/Opengl-VideoGame/GameCore/Shaders/terrainShader.vert", "C:/Users/miste/AAAJuego/Opengl-VideoGame/GameCore/Shaders/terrainShader.frag");
+	shaderProgram = ShaderManager::setAndGetShader("GameCore/Shaders/terrainShader.vert", "GameCore/Shaders/terrainShader.frag");
 	//glUniform1i(glGetUniformLocation(this->shader, "texture1"), 0);
 	initializeAtributes(size, terrainMeshDensity, frequency, amplitude);
 	generateMeshPoints();
