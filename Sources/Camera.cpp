@@ -55,7 +55,7 @@ void Camera::updateCamera(unsigned int shaderProgram) {
 
 	glm::mat4 projection;
 	projection = glm::mat4();
-	projection = glm::perspective(glm::radians(player->getFOV()), (float)width / float(height), 0.1f, 1000.0f);
+	projection = glm::perspective(glm::radians(player->getFOV()), (float)width / float(height), 0.1f, 100.0f);
 	unsigned int projectionLoc = glGetUniformLocation(shaderProgram, "projection");
 	glUniformMatrix4fv(projectionLoc, 1, GL_FALSE, glm::value_ptr(projection));
 }

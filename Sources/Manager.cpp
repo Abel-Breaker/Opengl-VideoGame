@@ -3,8 +3,8 @@
 
 
 void Manager::loader() {
-	terrain.prepareTerrain(150, 1, 10, 8); //150 4 10 8 //freq!=size
-	grass.prepareGrass(50000, &terrain);
+	terrain.prepareTerrain(15, 1, 1, 1); //150 4 10 8 //freq!=size
+	grass.prepareGrass(10, &terrain);
 	
 	player = Player::getPlayer();
 	player->setTerrain(&terrain);
@@ -27,7 +27,8 @@ void Manager::draw() {
 	
 	//player->draw();
 
+	//animator->UpdateAnimation(Frame::getLapsoTime());
+	//ourModel->Draw(animator);
 
-	ourModel->Draw(animator);
 	grass.draw();
 }

@@ -5,17 +5,13 @@
 #include <glm/glm.hpp>
 #include <glm/gtc/matrix_transform.hpp>
 #include <glm/gtc/type_ptr.hpp>
-//#include <ctime>
 #include <math.h>
 #include "../Headers/Camera.h"
 #include "../Headers/ShaderManager.h"
 
-extern unsigned int terrainShaderProgram;
-//extern unsigned int shaderProgram;
 
 void Terrain::prepareTerrain(int size, int terrainMeshDensity, short frequency, short amplitude) {
 	shaderProgram = ShaderManager::setAndGetShader("GameCore/Shaders/terrainShader.vert", "GameCore/Shaders/terrainShader.frag");
-	//glUniform1i(glGetUniformLocation(this->shader, "texture1"), 0);
 	initializeAtributes(size, terrainMeshDensity, frequency, amplitude);
 	generateMeshPoints();
 	createVao();
@@ -29,9 +25,9 @@ void Terrain::initializeAtributes(int size, int terrainMeshDensity, short freque
 	this->amplitude = amplitude;
 	//Number of squares multiply by points of each square
 	//Multiply by meshDensity^2 (subdivision of each square in squares)
-	this->numberOfIndices = ((size) * (size)) * (6 * terrainMeshDensity * terrainMeshDensity) * 3; // Cada 3 índices es una coordenada/vértice
-	this->numberOfIndices += this->numberOfIndices * 2 / 3; //Texture coordinates
-	this->meshPoints = (float*)malloc((this->numberOfIndices) * sizeof(float));
+	this->numberOfInstances = ((size) * (size)) * (6 * terrainMeshDensity * terrainMeshDensity) * 3; // Cada 3 índices es una coordenada/vértice
+	this->numberOfInstances += this->numberOfInstances * 2 / 3; //Texture coordinates
+	this->meshPoints = (float*)malloc((this->numberOfInstances) * sizeof(float));
 	this->VAO = 0;
 	this->texture = 0;
 }
@@ -110,18 +106,12 @@ void Terrain::generateMeshPoints() {
 			}
 		}
 	}
-	//printf("Array index: %d, indices: %d\n", arrayIndex + 29, this->numberOfIndices);
-	/*for (int i = 0; i < this->numberOfIndices; i += 3) {
-		printf("%d-> x:%f, y:%f, z:%f\n", i / 3, this->meshPoints[i], this->meshPoints[i + 1], this->meshPoints[i + 2]);
-	}*/
-	//printf("y:%f\n", this->meshPoints[11 * iFactor + 11 * jFactor + 1 -5]);
-	//printf("y:%f\n", this->meshPoints[6]);
 }
 
+//Texture coordinates for EACH square
 void Terrain::setTextureCoordinates(int arrayIndex, int asseX, int asseZ) {
 	this->meshPoints[arrayIndex] = (float)asseX/this->size;
 	this->meshPoints[arrayIndex + 1] = (float)asseZ / this->size;
-	//printf("%f %f\n", this->meshPoints[arrayIndex], this->meshPoints[arrayIndex + 1]);
 }
 
 void Terrain::createVao() {
@@ -130,12 +120,11 @@ void Terrain::createVao() {
 	/* INICIALIZAMOS VAO */
 	glGenVertexArrays(1, &(this->VAO));
 	glGenBuffers(1, &VBO);
-	// bind the Vertex Array Object first.
 	glBindVertexArray(this->VAO);
 
 
 	glBindBuffer(GL_ARRAY_BUFFER, VBO);
-	glBufferData(GL_ARRAY_BUFFER, this->numberOfIndices * sizeof(float), this->meshPoints, GL_STATIC_DRAW);/////////////////
+	glBufferData(GL_ARRAY_BUFFER, this->numberOfInstances * sizeof(float), this->meshPoints, GL_STATIC_DRAW);
 
 	//Normales
 	//glVertexAttribPointer(1, 3, GL_FLOAT, GL_FALSE, 8 * sizeof(float), (void*)0);
@@ -156,14 +145,13 @@ void Terrain::createVao() {
 }
 
 //CARGA DE TEXTURAS
-void Terrain::loadTexture() {
-	// load and create a texture 
-	// -------------------------
+void Terrain::loadTexture() 
+{
 
 	glGenTextures(1, &this->texture);
-	glBindTexture(GL_TEXTURE_2D, this->texture); // all upcoming GL_TEXTURE_2D operations now have effect on this texture object
+	glBindTexture(GL_TEXTURE_2D, this->texture);
 	// set the texture wrapping parameters
-	glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_S, GL_REPEAT);	// set texture wrapping to GL_REPEAT (default wrapping method)
+	glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_S, GL_REPEAT);
 	glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_T, GL_REPEAT);
 	// set texture filtering parameters
 	glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MIN_FILTER, GL_LINEAR);
@@ -205,7 +193,7 @@ void Terrain::draw() {
 
 	/* DIBUJAMOS */
 	glBindVertexArray(this->VAO);
-	glDrawArrays(GL_TRIANGLES, 0, this->numberOfIndices);
+	glDrawArrays(GL_TRIANGLES, 0, this->numberOfInstances);
 	glBindVertexArray(0);
 
 }

@@ -76,7 +76,7 @@ void Mesh::loadTexture() {
     if (data)
     {
         glTexImage2D(GL_TEXTURE_2D, 0, GL_RGB, width, height, 0, GL_RGB, GL_UNSIGNED_BYTE, data);
-
+        //glGenerateMipmap(GL_TEXTURE_2D);
     }
     else
     {
@@ -92,7 +92,7 @@ void Mesh::Draw(Animator* animator)
 
     Camera::updateCamera(shader);
 
-    animator->UpdateAnimation(Frame::getLapsoTime());
+    //animator->UpdateAnimation(Frame::getLapsoTime()); //TODO: Lo he quitado y va fino
     
     int boneLoc;
     std::vector<glm::mat4> transforms = animator->GetFinalBoneMatrices();

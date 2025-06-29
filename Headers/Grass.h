@@ -4,10 +4,9 @@
 class Grass
 {
 private:
-	float meshPoints[30];
-	int numberOfIndices;
+	float meshPoints[42];
+	int numberOfInstances;
 	float *randomLocations;
-	//float *terrainMesh;
 	int maximumSizeToSpawn;
 	unsigned int VAO;
 	unsigned int texture;

@@ -7,7 +7,7 @@ private:
 	int terrainMeshDensity; //Subdivision of each square
 	short int frequency;
 	short int amplitude;
-	int numberOfIndices;
+	int numberOfInstances;
 	float *meshPoints;
 	unsigned int VAO;
 	unsigned int texture;
