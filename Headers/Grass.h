@@ -4,8 +4,8 @@
 class Grass
 {
 private:
-	float meshPoints[42];
-	int numberOfInstances;
+	float maxLODmeshPoints[66];
+	int numberOfVertexs;
 	float *randomLocations;
 	int maximumSizeToSpawn;
 	unsigned int VAO;
@@ -13,14 +13,16 @@ private:
 	unsigned int shaderProgram;
 	Terrain *terrain;
 
-	void generateMeshPoints();
+	void generateMaxLODMeshPoints();
+	void generateMidLODMeshPoints();
+	void generateLowLODMeshPoints();
 	void generateRandomLocations();
 	void storeRandomLocations();
 	void createVao();
 	void loadTexture();
 	void bindBufferGrassLocation();
 public:
-	void prepareGrass(int numberOfInstances, Terrain* terrain);
+	void prepareGrass(int numberOfVertexs, Terrain* terrain);
 	void draw();
 };
 

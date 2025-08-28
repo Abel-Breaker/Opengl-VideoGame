@@ -3,8 +3,8 @@
 
 
 void Manager::loader() {
-	terrain.prepareTerrain(15, 1, 1, 1); //150 4 10 8 //freq!=size
-	grass.prepareGrass(10, &terrain);
+	terrain.prepareTerrain(150, 1, 10, 8); //150 4 10 8 //freq!=size
+	grass.prepareGrass(500000, &terrain);
 	
 	player = Player::getPlayer();
 	player->setTerrain(&terrain);

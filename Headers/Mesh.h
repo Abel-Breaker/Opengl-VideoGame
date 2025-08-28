@@ -7,6 +7,7 @@
 
 class Animator;
 
+
 struct Vertex {
     glm::vec3 Position;
     glm::vec3 Normal;
@@ -18,6 +19,7 @@ struct Vertex {
     float boneWeights[MAX_BONE_INFLUENCE];
 
 };
+
 struct Texture {
     unsigned int id;
     std::string type;

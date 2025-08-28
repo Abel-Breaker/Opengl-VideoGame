@@ -10,6 +10,7 @@ layout(std430, binding = 0) buffer grassPositions {
 
 out vec3 Normal;
 out vec3 FragPos;
+out vec3 vertexColor;
 
 const float windStrength = 0.8; // Influency on the velocity of the grass movement
 const float maxGrassOndulation = windStrength*2; // Depends of the wind strength
@@ -43,11 +44,25 @@ float noise(vec2 st) {
 
 void main()
 {
+
+    // Color
+    // Normalizamos la altura entre 0 y 1
+    float valueMix = clamp((aPos.y) / (3), 0.0, 1.0);
+
+    // Color de hoja oscuro (abajo)
+    vec3 darkGreen = vec3(0.05, 0.2, 0.01);
+
+    // Color de hoja claro (arriba)
+    vec3 lightGreen = vec3(0.5, 0.6, 0.1);
+
+    // Interpolamos entre los colores según la altura
+    vertexColor = mix(darkGreen, lightGreen, valueMix);
+
     // Calculate the grass base bend
     float baseCurve = random(vec2(gl_InstanceID, 0.0)) * aPos.y;
 
     // Calculate a random movement (noise + time) independent for each grass (gl_InstanceID) and each vertex of it (aPos.xz)
-    float curveAmount = baseCurve + noise(vec2(time * windStrength - gl_InstanceID) + aPos.xz) * maxGrassOndulation;
+    float curveAmount = baseCurve + noise(vec2((time + gl_InstanceID) * windStrength) + aPos.xz) * maxGrassOndulation;
 
     // Random size for each grass
     mat4 scale = mat4(

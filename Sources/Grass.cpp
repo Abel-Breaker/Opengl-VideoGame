@@ -10,13 +10,16 @@
 #include <iostream>
 #include "../Headers/Player.h"
 
-void Grass::prepareGrass(int numberOfInstances, Terrain *terrain) {
-	this->shaderProgram = ShaderManager::setAndGetShader("C:/Users/miste/AAAJuego/Opengl-VideoGame/GameCore/Shaders/grassShader.vert", "C:/Users/miste/AAAJuego/Opengl-VideoGame/GameCore/Shaders/grassShader.frag");
-	this->numberOfInstances = numberOfInstances;
-	this->randomLocations = (float *)malloc(numberOfInstances * 3 * sizeof(float)); 
+#define radiusMaxLOD 30
+#define radiusMidLOD 30
+
+void Grass::prepareGrass(int numberOfVertexs, Terrain *terrain) {
+	this->shaderProgram = ShaderManager::setAndGetShader("GameCore/Shaders/grassShader.vert", "GameCore/Shaders/grassShader.frag");
+	this->numberOfVertexs = numberOfVertexs;
+	this->randomLocations = (float *)malloc(numberOfVertexs * 3 * sizeof(float)); 
 	this->maximumSizeToSpawn = terrain->getSize() - 1; //-1 Ya que para acceder al array con los mesh points si es 150 va de 0 a 149 los indices
 	this->terrain = terrain;
-	generateMeshPoints();
+	generateMaxLODMeshPoints();
 	generateRandomLocations();
 	createVao();
 	bindBufferGrassLocation();
@@ -26,46 +29,62 @@ void Grass::prepareGrass(int numberOfInstances, Terrain *terrain) {
 void Grass::generateRandomLocations() {
 	srand(time(NULL));
 
-	for (int i = 0; i < this->numberOfInstances; i ++) {
+	for (int i = 0; i < this->numberOfVertexs; i ++) {
 		this->randomLocations[i*3] = ((float)rand() / RAND_MAX) * this->maximumSizeToSpawn;
 		this->randomLocations[i * 3 + 2] = ((float)rand() / RAND_MAX) * this->maximumSizeToSpawn;
 		this->randomLocations[i * 3 + 1] = this->terrain->getYLocation(this->randomLocations[i * 3], this->randomLocations[i * 3 + 2]);
 	}
 }
 
-void Grass::generateMeshPoints() {
+void Grass::generateMaxLODMeshPoints() {
 	// Cada vértice: 3 posición + 3 normal = 6 floats
 	// Total vértices: 7 -> 7 * 6 = 42 floats
 
 	int i = 0;
 
 	// Base izquierda
-	this->meshPoints[i++] = -0.5f;  this->meshPoints[i++] = 0.0f; this->meshPoints[i++] = 0.0f;
-	this->meshPoints[i++] = -0.4f;  this->meshPoints[i++] = 0.0f; this->meshPoints[i++] = 1.0f;
+	this->maxLODmeshPoints[i++] = -0.1f;  this->maxLODmeshPoints[i++] = 0.0f; this->maxLODmeshPoints[i++] = 0.0f;
+	this->maxLODmeshPoints[i++] = -0.4f;  this->maxLODmeshPoints[i++] = 0.0f; this->maxLODmeshPoints[i++] = 1.0f;
 
 	// Base derecha
-	this->meshPoints[i++] = 0.5f;   this->meshPoints[i++] = 0.0f; this->meshPoints[i++] = 0.0f;
-	this->meshPoints[i++] = 0.4f;   this->meshPoints[i++] = 0.0f; this->meshPoints[i++] = 1.0f;
+	this->maxLODmeshPoints[i++] = 0.1f;   this->maxLODmeshPoints[i++] = 0.0f; this->maxLODmeshPoints[i++] = 0.0f;
+	this->maxLODmeshPoints[i++] = 0.4f;   this->maxLODmeshPoints[i++] = 0.0f; this->maxLODmeshPoints[i++] = 1.0f;
 
 	// Primer segmento izquierda
-	this->meshPoints[i++] = -0.5f;  this->meshPoints[i++] = 1.0f; this->meshPoints[i++] = 0.0f;
-	this->meshPoints[i++] = -0.5f;  this->meshPoints[i++] = 0.2f; this->meshPoints[i++] = 1.0f;
+	this->maxLODmeshPoints[i++] = -0.1f;  this->maxLODmeshPoints[i++] = 0.25f; this->maxLODmeshPoints[i++] = 0.0f;
+	this->maxLODmeshPoints[i++] = -0.5f;  this->maxLODmeshPoints[i++] = 0.2f; this->maxLODmeshPoints[i++] = 1.0f;
 
 	// Primer segmento derecha
-	this->meshPoints[i++] = 0.5f;   this->meshPoints[i++] = 1.0f; this->meshPoints[i++] = 0.0f;
-	this->meshPoints[i++] = 0.5f;   this->meshPoints[i++] = 0.2f; this->meshPoints[i++] = 1.0f;
+	this->maxLODmeshPoints[i++] = 0.1f;   this->maxLODmeshPoints[i++] = 0.25f; this->maxLODmeshPoints[i++] = 0.0f;
+	this->maxLODmeshPoints[i++] = 0.5f;   this->maxLODmeshPoints[i++] = 0.2f; this->maxLODmeshPoints[i++] = 1.0f;
 
 	// Segundo segmento izquierda
-	this->meshPoints[i++] = -0.3f;  this->meshPoints[i++] = 2.0f; this->meshPoints[i++] = 0.0f;
-	this->meshPoints[i++] = -0.3f;  this->meshPoints[i++] = 0.3f; this->meshPoints[i++] = 1.0f;
+	this->maxLODmeshPoints[i++] = -0.1f;  this->maxLODmeshPoints[i++] = 0.5f; this->maxLODmeshPoints[i++] = 0.0f;
+	this->maxLODmeshPoints[i++] = -0.5f;  this->maxLODmeshPoints[i++] = 0.2f; this->maxLODmeshPoints[i++] = 1.0f;
 
 	// Segundo segmento derecha
-	this->meshPoints[i++] = 0.3f;   this->meshPoints[i++] = 2.0f; this->meshPoints[i++] = 0.0f;
-	this->meshPoints[i++] = 0.3f;   this->meshPoints[i++] = 0.3f; this->meshPoints[i++] = 1.0f;
+	this->maxLODmeshPoints[i++] = 0.1f;   this->maxLODmeshPoints[i++] = 0.5f; this->maxLODmeshPoints[i++] = 0.0f;
+	this->maxLODmeshPoints[i++] = 0.5f;   this->maxLODmeshPoints[i++] = 0.2f; this->maxLODmeshPoints[i++] = 1.0f;
+
+	// Tercer segmento izquierda
+	this->maxLODmeshPoints[i++] = -0.075f;  this->maxLODmeshPoints[i++] = 0.75f; this->maxLODmeshPoints[i++] = 0.0f;
+	this->maxLODmeshPoints[i++] = -0.3f;  this->maxLODmeshPoints[i++] = 0.3f; this->maxLODmeshPoints[i++] = 1.0f;
+
+	// Tercer segmento derecha
+	this->maxLODmeshPoints[i++] = 0.075f;   this->maxLODmeshPoints[i++] = 0.75f; this->maxLODmeshPoints[i++] = 0.0f;
+	this->maxLODmeshPoints[i++] = 0.3f;   this->maxLODmeshPoints[i++] = 0.3f; this->maxLODmeshPoints[i++] = 1.0f;
+
+	// Cuarto segmento izquierda
+	this->maxLODmeshPoints[i++] = -0.05f;  this->maxLODmeshPoints[i++] = 1.0f; this->maxLODmeshPoints[i++] = 0.0f;
+	this->maxLODmeshPoints[i++] = -0.3f;  this->maxLODmeshPoints[i++] = 0.3f; this->maxLODmeshPoints[i++] = 1.0f;
+
+	// Cuarto segmento derecha
+	this->maxLODmeshPoints[i++] = 0.05f;   this->maxLODmeshPoints[i++] = 1.0f; this->maxLODmeshPoints[i++] = 0.0f;
+	this->maxLODmeshPoints[i++] = 0.3f;   this->maxLODmeshPoints[i++] = 0.3f; this->maxLODmeshPoints[i++] = 1.0f;
 
 	// Punta central
-	this->meshPoints[i++] = 0.0f;   this->meshPoints[i++] = 3.0f; this->meshPoints[i++] = 0.0f;
-	this->meshPoints[i++] = 0.0f;   this->meshPoints[i++] = 1.0f; this->meshPoints[i++] = 1.0f;
+	this->maxLODmeshPoints[i++] = 0.0f;   this->maxLODmeshPoints[i++] = 1.5f; this->maxLODmeshPoints[i++] = 0.0f;
+	this->maxLODmeshPoints[i++] = 0.0f;   this->maxLODmeshPoints[i++] = 1.0f; this->maxLODmeshPoints[i++] = 1.0f;
 }
 
 void Grass::createVao() {
@@ -79,7 +98,7 @@ void Grass::createVao() {
 
 
 	glBindBuffer(GL_ARRAY_BUFFER, VBO);
-	glBufferData(GL_ARRAY_BUFFER, sizeof(this->meshPoints), this->meshPoints, GL_STATIC_DRAW);
+	glBufferData(GL_ARRAY_BUFFER, sizeof(this->maxLODmeshPoints), this->maxLODmeshPoints, GL_STATIC_DRAW);
 
 	//Vertexs
 	glVertexAttribPointer(0, 3, GL_FLOAT, GL_FALSE, 6 * sizeof(float), (void*)0);
@@ -99,17 +118,18 @@ void Grass::createVao() {
 	//glDeleteBuffers(1, &VBO);
 }
 
-void Grass::bindBufferGrassLocation() {
+void Grass::bindBufferGrassLocation() 
+{
 	GLuint ssbo;
 	glGenBuffers(1, &ssbo);
 	glBindBuffer(GL_SHADER_STORAGE_BUFFER, ssbo);
-	glBufferData(GL_SHADER_STORAGE_BUFFER, this->numberOfInstances * sizeof(float) * 3, this->randomLocations, GL_STATIC_DRAW);
+	glBufferData(GL_SHADER_STORAGE_BUFFER, this->numberOfVertexs * sizeof(float) * 3, this->randomLocations, GL_STATIC_DRAW);
 	glBindBufferBase(GL_SHADER_STORAGE_BUFFER, 0, ssbo);
 	glBindBuffer(GL_SHADER_STORAGE_BUFFER, 0); // unbind
-
 }
 
 //CARGA DE TEXTURAS
+
 void Grass::loadTexture() {
 	// load and create a texture 
 	// -------------------------
@@ -147,11 +167,6 @@ void Grass::draw() {
 
 	Camera::updateCamera(shaderProgram);
 
-	/* APLICAMOS TEXTURA */
-	//glUniform1i(glGetUniformLocation(this->shaderProgram, "texture1"), 0);
-	//glActiveTexture(GL_TEXTURE0);
-	//glBindTexture(GL_TEXTURE_2D, this->texture);
-
 	//la posicion del usuario/camara
 	unsigned int viewPosLoc = glGetUniformLocation(shaderProgram, "viewPos"); 
 	// TODO: Cambiar esta aberración. Metodo que devuelva vec3 (de camara?)
@@ -162,7 +177,7 @@ void Grass::draw() {
 
 	/* DIBUJAMOS */
 	glBindVertexArray(this->VAO);
-	glDrawArraysInstanced(GL_TRIANGLE_STRIP, 0, 7, this->numberOfInstances);
+	glDrawArraysInstanced(GL_TRIANGLE_STRIP, 0, 11, this->numberOfVertexs);
 	glBindVertexArray(0);
 
 }

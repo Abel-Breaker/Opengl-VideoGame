@@ -62,7 +62,7 @@ void Player::applyGravity() {
 }
 
 void Player::updateHeight(double newHeightToReach) {
-	this->position_Y -= 3;
+	this->position_Y -= 3; // -3
 	this->position_Y = (this->position_Y + this->forceGravity * Frame::getLapsoTime() * (newHeightToReach - this->position_Y)) + 3.0;
 }
 
